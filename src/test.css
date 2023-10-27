@@ -1,0 +1,10 @@
+.product-catalog {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-image {
+    width: 100px; /* ปรับขนาดรูปภาพตามที่คุณต้องการ */
+    height: 100px;
+    object-fit: cover; /* ให้รูปภาพเต็มกรอบ */
+}

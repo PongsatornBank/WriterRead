@@ -1,0 +1,130 @@
+.body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* header {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+} */
+
+header div img {
+  border-radius: 50px;
+  margin: 10px;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: pink;
+  color: black;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  font-size: 30px;
+  color: #3B5998;
+  margin: 5px;
+}
+
+.fa-twitter {
+  font-size: 30px;
+  color: #55ACEE;
+  margin: 5px 10px 5px 5px;
+}
+
+.footer_topic {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+p {
+  margin: 5px 0px 5px 0px;
+}
+
+.catalog {
+  width: 80%;
+  margin: 0px;
+}
+
+.category {
+  margin: 20px 0px;
+}
+
+.topic {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.copyright {
+  text-align: center; 
+  font-weight: bold;
+  margin: 10px 0px 10px 0px;
+}
+
+.end {
+  text-align: center;
+} 
+
+/* .topic_original , .topic_romantic {
+  margin: 50px auto 20px auto;
+} */
+
+/* .product {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+} */
+
+/* figure {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .img_category {
+  width: 220px;
+  height: 260px;
+  margin-bottom: 10px;
+} */
+
+/* .nevel_name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px auto 10px auto;
+} */
+
+/* .novel_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  font-size: 15px;
+  color: gray;
+} */
