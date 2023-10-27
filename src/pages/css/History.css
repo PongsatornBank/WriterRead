@@ -1,0 +1,110 @@
+.body{
+    margin : 0;
+    padding : 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.App-logo {
+    padding-top: 10px;
+    margin-left: 150px;
+    height: 70px;
+    pointer-events:none;
+    border-radius : 100px;
+  }
+header{
+    background-color:lightpink;
+    height: 90px;
+    flex:0.1;
+}
+main{
+    flex:4;
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    background-color:lightpink;
+}
+.container{
+    display: flex;
+    flex:2;
+    flex-direction: column;
+}
+.topic{
+    display: flex;
+    margin-top: 14px;
+    
+}
+.icons{
+    font-size: 30px;
+    margin-left: 5px;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    position:absolute ;
+    width: 45%;
+    /* margin-top: 20px; */
+    margin-top: 40px;
+    /* background-color: lightskyblue; */
+    font-family:'The nautigal';
+    box-shadow: 0 2px goldenrod;
+    font-size: 20px;
+    z-index: 10;
+}
+.nav-list{
+    display:flex;
+    margin-right:2rem;
+}
+@media (max-width: 28.75em) {
+    .navbar {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+.nav-list div {
+    display:block;
+    font-family:'The nautigal';
+    font-size: 20px;
+    padding: 10px 20px 0px 20px;
+
+}
+.nav-list div:hover{
+    color: goldenrod;
+}
+.zone-fic{
+    margin-top: 50px;
+}
+.fiction{
+    display: flex;
+    flex : 3;
+    flex-direction: row;
+    border-radius: 30px;
+    padding-bottom: 10px;
+
+}
+.details {
+    display:flex;
+    flex-direction:column;
+    flex:2;
+    padding-left: 10px;
+    width: 100%;
+
+}
+
+.details p{
+    color:grey;
+    font-family:'The nautigal';
+    
+}
+.fic-pic{
+    display: flex;
+    flex : 1;
+    width: 30%;
+    height: 10rem;
+    border-radius : 40px;
+}
+

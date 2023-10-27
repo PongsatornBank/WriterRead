@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        <img src='https://i.ibb.co/L1Fzz4W/logo.jpg' alt='logo' width={180} height={90}></img>
+        <img src='https://i.ibb.co/L1Fzz4W/logo.jpg' style={{marginLeft:'150px',borderRadius:'100px'}} alt='logo' width={180} height={90}></img>
       </Link>
       <ul>
         <CustomLink to="/profile"> Profile </CustomLink>
