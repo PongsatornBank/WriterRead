@@ -12,18 +12,10 @@
     pointer-events:none;
     border-radius : 100px;
   }
-header{
-    background-color:lightpink;
-    height: 90px;
-    flex:0.1;
-}
 main{
     flex:4;
     display: flex;
     flex-direction: row;
-}
-footer{
-    background-color:lightpink;
 }
 .container{
     display: flex;
@@ -44,9 +36,7 @@ footer{
     justify-content: flex-end;
     position:absolute ;
     width: 45%;
-    /* margin-top: 20px; */
     margin-top: 40px;
-    /* background-color: lightskyblue; */
     font-family:'The nautigal';
     box-shadow: 0 2px goldenrod;
     font-size: 20px;

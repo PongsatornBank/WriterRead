@@ -1,8 +1,6 @@
 import React from 'react';
-// import {Navbar} from './Navbar'
 import './css/History.css'
 import {BsFillPersonFill,BsFillTrashFill} from 'react-icons/bs';
-import Navbar from '../Navbar'
 
 const listpic =()=> {
     const rd = Math.floor(Math.random() * 2) 
@@ -48,22 +46,14 @@ const flexRead = () => {
         return 'row'
     }
 }
-// const ficList = {}
 const History = () => {
     return(
         <div className='body'>
-            <header>
-                <Navbar/>
-                {/* <Navbar/> */}
-                {/* <h1>Header</h1> */}
-                {/* <div style={{cursor: 'pointer'}} onClick={()=>{}}><img src="friedEgg.jpg" className="App-logo" alt="logo" /></div> */}
-            </header>
             <main style={{flexDirection:'row'}}>
                     <div style={{flex:1}}> </div>
                     <div className='container'>
                         <div className='topic'>
-                            <div style={{backgroundColor: 'white',borderColor:'white' ,cursor: 'pointer'}}
-                                onClick={console.log('press')}
+                            <div style={{backgroundColor: 'white',borderColor:'white' }}
                                 ><text style={{fontSize:'45px',fontFamily:'The nautigal',fontWeight:'bold'}}>Reading</text>
                             </div>
                             <div className='navbar' >
@@ -83,10 +73,6 @@ const History = () => {
                     <div style={{flex:1}}></div>
                 
             </main>
-            <footer>
-                <h1>Footer</h1>
-                
-            </footer>
         </div>
     )
 }

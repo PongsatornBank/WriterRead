@@ -8,7 +8,7 @@ export default function Navbar() {
       </Link>
       <ul>
         <CustomLink to="/profile"> Profile </CustomLink>
-        <CustomLink to="/novel"> Novel </CustomLink>
+        <CustomLink to="/Read"> Read </CustomLink>
       </ul>
     </nav>
   )
