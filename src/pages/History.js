@@ -54,7 +54,7 @@ const History = () => {
                     <div className='container'>
                         <div className='topic'>
                             <div style={{backgroundColor: 'white',borderColor:'white' }}
-                                ><text style={{fontSize:'45px',fontFamily:'The nautigal',fontWeight:'bold'}}>Reading</text>
+                                ><text style={{fontSize:'45px',fontFamily:'The nautigal',fontWeight:'bold',cursor: 'pointer'}}>Reading</text>
                             </div>
                             <div className='navbar' >
                                 <ul className='nav-list'>
