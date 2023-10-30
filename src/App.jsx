@@ -5,7 +5,8 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import Navbar from "./Navbar"
 import { Route, Routes } from "react-router-dom"
 import Profile from './pages/profile';
-import Novel from './pages/novel';
+import History from './pages/History';
+import Write from './pages/Write'
 import BannerSlider from './BannerSlider';
 
 function App() {
@@ -16,20 +17,20 @@ function App() {
       </Helmet>
 
       <header>
-        <div>
-          <Navbar />
+          <Navbar/>
           <div className="container">
-            <Routes>
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/novel" element={<Novel />} />
+            <Routes >
+              <Route path="/" element={<BannerSlider/>} />
+              <Route path="/profile" element={<Profile />}  />
+              <Route path="/Read" element={<History />} />
+              <Route path="/Write" element={<Write />} />
             </Routes>
           </div>
-        </div>
       </header>
 
       <main>
-        <BannerSlider/>
-      </main>
+        {/* <BannerSlider/> */}
+      </main> 
 
       <footer>
         <div className='icon'>

@@ -6,12 +6,12 @@
   flex-direction: column;
 }
 
-/* header {
-  background-color: pink;
+header {
+  /* background-color: pink; */
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-} */
+}
 
 header div img {
   border-radius: 50px;
