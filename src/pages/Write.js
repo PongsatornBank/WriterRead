@@ -1,3 +1,3 @@
-export default function Profile() {
+export default function Write() {
     return <h1> Write </h1>
 }
