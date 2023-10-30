@@ -20,7 +20,7 @@ const showRead = () => {
     while(i<=6){
         boxs.push(
             <div className='fiction'>
-                <img src={listpic()} style={{cursor: 'pointer'}} onClick={()=>{}} className="fic-pic" alt="ficpic" />
+                <a href="./Fiction"><img src={listpic()} style={{cursor: 'pointer'}} onClick={()=>{}} className="fic-pic" alt="ficpic" /></a>
                 <div className='details'>
                     <text style={{display:'flex',justifyContent:'center',fontSize:'20px',fontWeight:'bold',paddingTop:'20px'}}>หมอ</text>
                     <div style={{display:'flex',paddingLeft:'10px'}}>
