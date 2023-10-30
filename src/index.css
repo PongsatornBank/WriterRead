@@ -47,10 +47,17 @@ body {
   padding: .25rem;
 }
 
+.nav li{
+  width: 60px;
+  height: 60px;
+  margin : auto;
+}
 .nav li.active {
-  background-color: #555;
+  background-color: orange;
+  border-radius: 100%;
 }
 
 .nav li:hover {
-  background-color: #777;
+  background-color: rgb(255, 175, 105);
+  border-radius: 100%;
 }

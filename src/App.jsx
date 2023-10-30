@@ -7,6 +7,9 @@ import { Route, Routes } from "react-router-dom"
 import Profile from './pages/profile';
 import History from './pages/History';
 import Write from './pages/Write'
+import Search from './pages/Search';
+import Fiction from './pages/Fiction'
+import Notificate from './pages/Notificate';
 import BannerSlider from './BannerSlider';
 
 function App() {
@@ -24,12 +27,15 @@ function App() {
               <Route path="/profile" element={<Profile />}  />
               <Route path="/Read" element={<History />} />
               <Route path="/Write" element={<Write />} />
+              <Route path="/Notification" element={<Notificate />} />
+              <Route path="/Search" element={<Search />} />
+              <Route path="/Fiction" element={<Fiction/>}/>
             </Routes>
           </div>
       </header>
 
       <main>
-        {/* <BannerSlider/> */}
+
       </main> 
 
       <footer>
