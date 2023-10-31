@@ -30,7 +30,7 @@ figure {
 .img_category {
     width: 235px;
     height: 290px;
-    margin-bottom: 10px;
+    border-radius: 50px;
 }
 
 .nevel_name {

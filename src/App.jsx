@@ -10,7 +10,7 @@ import Write from './pages/Write'
 import Search from './pages/Search';
 import Fiction from './pages/Fiction'
 import Notificate from './pages/Notificate';
-import {MainScreen} from './pages/Main';
+import { MainScreen } from './pages/Main';
 
 function App() {
   return (
