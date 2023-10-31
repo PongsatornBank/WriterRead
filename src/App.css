@@ -6,18 +6,6 @@
   flex-direction: column;
 }
 
-header {
-  /* background-color: pink; */
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-header div img {
-  border-radius: 50px;
-  margin: 10px;
-}
-
 main {
   flex: 1;
 }
@@ -64,24 +52,6 @@ footer {
   justify-content: space-evenly;
 }
 
-p {
-  margin: 5px 0px 5px 0px;
-}
-
-.catalog {
-  width: 80%;
-  margin: 0px;
-}
-
-.category {
-  margin: 20px 0px;
-}
-
-.topic {
-  margin: 0px;
-  padding-left: 0px;
-}
-
 .copyright {
   text-align: center; 
   font-weight: bold;
@@ -94,37 +64,4 @@ p {
 
 /* .topic_original , .topic_romantic {
   margin: 50px auto 20px auto;
-} */
-
-/* .product {
-  display: flex;
-  flex-direction: row; 
-  flex-wrap: wrap;
-} */
-
-/* figure {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .img_category {
-  width: 220px;
-  height: 260px;
-  margin-bottom: 10px;
-} */
-
-/* .nevel_name {
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 10px auto 10px auto;
-} */
-
-/* .novel_details {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: auto;
-  font-size: 15px;
-  color: gray;
 } */
