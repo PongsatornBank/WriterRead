@@ -1,0 +1,57 @@
+.catalog {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.category {
+    margin: 20px 0;
+}
+
+.topic_original , .topic_romantic {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px auto 20px auto;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.img_category {
+    width: 235px;
+    height: 290px;
+    margin-bottom: 10px;
+}
+
+.nevel_name {
+    text-align: start;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5 0px 5px 0px;
+}
+
+.novel_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    color: gray;
+}
+
+.novel_details_icon {
+    display:flex;
+}
+
+.view , .fav {
+    margin: 3px;;
+}

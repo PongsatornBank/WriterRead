@@ -10,7 +10,7 @@ import Write from './pages/Write'
 import Search from './pages/Search';
 import Fiction from './pages/Fiction'
 import Notificate from './pages/Notificate';
-import BannerSlider from './BannerSlider';
+import {MainScreen} from './pages/Main';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Navbar/>
           <div className="container">
             <Routes >
-              <Route path="/" element={<BannerSlider/>} />
+              <Route path="/" element={<MainScreen/>} />
               <Route path="/profile" element={<Profile />}  />
               <Route path="/Read" element={<History />} />
               <Route path="/Write" element={<Write />} />

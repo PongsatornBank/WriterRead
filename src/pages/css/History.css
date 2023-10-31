@@ -76,6 +76,11 @@ main{
     padding-bottom: 10px;
 
 }
+
+.fiction a {
+    display:flex;
+    width: 35%;
+}
 .details {
     display:flex;
     flex-direction:column;
@@ -97,4 +102,3 @@ main{
     height: 10rem;
     border-radius : 40px;
 }
-
