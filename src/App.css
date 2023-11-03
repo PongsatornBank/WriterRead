@@ -4,19 +4,21 @@
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
+  transition: all;
+  transition-duration: 500ms;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
 }
 
 header {
-  /* background-color: pink; */
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-header div img {
-  border-radius: 50px;
-  margin: 10px;
-}
 
 main {
   flex: 1;

@@ -1,10 +1,11 @@
-
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import {GiBookCover} from 'react-icons/gi';
 import {PiNotePencilFill} from 'react-icons/pi';
 import {HiMiniBell} from 'react-icons/hi2';
 import {BsSearch} from 'react-icons/bs'
-
+import {WiDayHaze} from 'react-icons/wi'
+import {IoIosCloudyNight} from 'react-icons/io'
+import './pages/css/History.css'
 const profile = () => {
   return(
       <img src='eggAcc.png' style={{borderRadius:'100px',borderColor:'black',borderWidth:'2px'}} alt='logo' width={50} height={50}></img>
@@ -43,18 +44,35 @@ const notification = () => {
 }
 
 
-export default function Navbar() {
+export default function Navbar(props) {
+  
   return (
-    <nav className="nav">
+    <nav className={`nav`}>
       <Link to="/" className="site-title">
         <img src='https://i.ibb.co/L1Fzz4W/logo.jpg' style={{margin:10,borderRadius:50}} alt='logo' width={180} height={90}></img>
       </Link>
       <ul style={{marginRight:'150px'}}>
+        
         <CustomLink to="/Search"> {search()} </CustomLink>
-        <CustomLink to="/Notification"> {notification()} </CustomLink>
+        {/* <CustomLink to="/Notification"> {notification()} </CustomLink> */}
         <CustomLink to="/Read"> {read()} </CustomLink>
         <CustomLink to="/Write"> {write()} </CustomLink>
+        <li className='active' style={{display:'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <div className='light-button' onClick={()=>props.setDarkMode(!props.darkMode)}>
+            {props.darkMode ? (
+              <div style={{borderColor:'black',borderWidth:'2px',borderRadius:'100%',width:'50px',height:'50px'}}>
+                <WiDayHaze style={{cursor:'pointer',width:'40px',height:'40px',marginTop:'5px',marginLeft:'auto',marginRight:'auto'}} />
+              </div>
+            ) :
+            (
+              <div style={{borderColor:'black',borderWidth:'2px',borderRadius:'100%',width:'50px',height:'50px'}}>
+                <IoIosCloudyNight style={{cursor:'pointer',width:'40px',height:'40px',marginTop:'5px',marginLeft:'auto',marginRight:'auto'}}/>
+                </div>
+            )}
+          </div>
+        </li>
         <CustomLink to="/profile"> {profile()} </CustomLink>
+        
       </ul>
     </nav>
   )

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {BsSearch} from 'react-icons/bs'
 
-const Search = () => {
+const Search = (props) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
@@ -22,7 +22,7 @@ const Search = () => {
   };
 
   return (
-    <main style={{flexDirection:'row'}}>
+    <main>
         <div style={{flex:1}}> </div>
         <div style={{display:'flex',flexDirection:'column'}}>
             <div style={{display:'flex',marginTop:'20px'}}>
@@ -31,9 +31,9 @@ const Search = () => {
                     placeholder="ชื่อเรื่อง หรือ ผู้เขียน"
                     value={searchQuery}
                     onChange={handleSearchChange}
-                    style={{borderRadius:'100px',marginRight:'20px',width:'35rem',borderWidth:'2px',paddingLeft:'10px'}}
+                    style={{borderRadius:'100px',marginRight:'20px',width:'35rem',borderWidth:'2px',paddingLeft:'10px',color:'deeppink'}}
                 />
-                <button onClick={handleSearchSubmit}><BsSearch style={{width:'30px',height:'30px',color:'black',margin:'8px'}} /></button>
+                <button onClick={handleSearchSubmit}><BsSearch style={{width:'30px',height:'30px',margin:'8px'}} /></button>
             </div>
     
             <ul>

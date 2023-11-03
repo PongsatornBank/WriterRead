@@ -10,32 +10,31 @@ import Write from './pages/Write'
 import Search from './pages/Search';
 import Fiction from './pages/Fiction'
 import Notificate from './pages/Notificate';
+import Readfiction from './pages/Readfiction'
 import BannerSlider from './BannerSlider';
-
+import { useState } from "react";
 function App() {
+  const [darkMode,setDarkMode] = useState(false)
   return (
-    <div className='body'>
+    <div className={`body ${darkMode && 'bg-black'}`}>
       <Helmet>
         <title> WriterRead </title>
       </Helmet>
 
       <header>
-          <Navbar/>
-          <div className="container">
-            <Routes >
-              <Route path="/" element={<BannerSlider/>} />
-              <Route path="/profile" element={<Profile />}  />
-              <Route path="/Read" element={<History />} />
-              <Route path="/Write" element={<Write />} />
-              <Route path="/Notification" element={<Notificate />} />
-              <Route path="/Search" element={<Search />} />
-              <Route path="/Fiction" element={<Fiction/>}/>
-            </Routes>
-          </div>
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       </header>
 
       <main>
-
+        <Routes >
+          <Route path="/" element={<BannerSlider/>} />
+          <Route path="/profile" element={<Profile />}  />
+          <Route path="/Read" element={<History />} />
+          <Route path="/Write" element={<Write />} />
+          <Route path="/Search" element={<Search />} />
+          <Route path="/Fiction" element={<Fiction/>}/>
+          <Route path="/Readfic" element={<Readfiction/>}/>
+        </Routes>
       </main> 
 
       <footer>
