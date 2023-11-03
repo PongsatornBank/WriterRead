@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.text-white {
+    color: white;
+}
+
 .category {
     margin: 20px 0;
 }
