@@ -1,6 +1,6 @@
-import './Fiction.css';
 import React,{ useState } from 'react';
 import { BsFillPersonFill , BsEyeFill , BsHeartFill } from 'react-icons/bs';
+import './Fiction.css';
 
 export default function Fiction() {
     const Button = () => {
@@ -31,7 +31,7 @@ export default function Fiction() {
 
     return (
         <div className='body'>
-            <div className="container">
+            <div className='container' style={{backgroundImage: `url('https://i.ibb.co/ftbsdS0/img2.jpg')`}}>
                 <div className="modal">
                     <h2> มุมมองนักอ่านพระเจ้า (Omniscient Reader's Viewpoint) </h2>
                     <div style={{display:'flex' , flexDirection:'row' , justifyContent:'center'}}>

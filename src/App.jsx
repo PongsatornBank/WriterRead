@@ -1,17 +1,17 @@
-import './App.css';
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
-import Navbar from "./Navbar"
-import { Route, Routes } from "react-router-dom"
+import Navbar from "./Navbar";
+import { Route, Routes } from "react-router-dom";
 import Profile from './pages/profile';
 import History from './pages/History';
-import Write from './pages/Write'
+import Write from './pages/Write';
 import Search from './pages/Search';
-import Fiction from './pages/Fiction'
+import Fiction from './pages/Fiction';
 import Notificate from './pages/Notificate';
 import { MainScreen } from './pages/Main';
 import Empty from './pages/Empty';
+import '../src/css/App.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -24,7 +24,7 @@ function App() {
       <header>
           <div>
             <Navbar/>
-            <button onClick={() => setDarkMode(!darkMode)}>Hello</button>
+            {/* <button onClick={() => setDarkMode(!darkMode)}>Hello</button> */}
             <Routes >
               <Route path="/" element={<MainScreen darkMode={darkMode} setDarkMode={setDarkMode} />}/>
               <Route path="/profile" element={<Profile darkMode={darkMode} setDarkMode={setDarkMode} />}/>
