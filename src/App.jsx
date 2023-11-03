@@ -6,10 +6,9 @@ import Navbar from "./Navbar"
 import { Route, Routes } from "react-router-dom"
 import Profile from './pages/profile';
 import History from './pages/History';
-import Write from './pages/Write'
+// import Write from './pages/Write'
 import Search from './pages/Search';
 import Fiction from './pages/Fiction'
-import Notificate from './pages/Notificate';
 import Readfiction from './pages/Readfiction'
 import BannerSlider from './BannerSlider';
 import { useState } from "react";
@@ -30,7 +29,6 @@ function App() {
           <Route path="/" element={<BannerSlider/>} />
           <Route path="/profile" element={<Profile />}  />
           <Route path="/Read" element={<History />} />
-          <Route path="/Write" element={<Write />} />
           <Route path="/Search" element={<Search />} />
           <Route path="/Fiction" element={<Fiction/>}/>
           <Route path="/Readfic" element={<Readfiction/>}/>

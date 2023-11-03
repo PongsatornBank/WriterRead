@@ -113,25 +113,25 @@ const History = () => {
 
     
     return(
-            <main>
-                    <div style={{flex:1}}> </div>
-                    <div className='cont'>
-                        <div className='topic'>
-                            <text>Reading</text>
-                            <div className='navbar' >
-                                <ul className='nav-list'>
-                                    <div style={{cursor: 'pointer',display:'flex'}} onClick={()=>{setRead('latest')}}>Latest read <SiDarkreader  style={{marginTop:'5px',paddingLeft:'5px',width:'24px'}}/></div>
-                                    <div style={{cursor: 'pointer',display:'flex'}} onClick={()=>{setRead('bookmark')}}>Bookmark<BsFillBookmarkHeartFill style={{marginTop:'5px',paddingLeft:'5px',width:'24px'}}/></div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='zone-fic'>
-                           {SelectRead()}
-                        </div>
-                        
+        <div className='reading'>
+            <div style={{flex:1}}> </div>
+            <div className='cont'>
+                <div className='topic'>
+                    <text>Reading</text>
+                    <div className='navbar' >
+                        <ul className='nav-list'>
+                            <div style={{cursor: 'pointer',display:'flex'}} onClick={()=>{setRead('latest')}}>Latest read <SiDarkreader  style={{marginTop:'5px',paddingLeft:'5px',width:'24px'}}/></div>
+                            <div style={{cursor: 'pointer',display:'flex'}} onClick={()=>{setRead('bookmark')}}>Bookmark<BsFillBookmarkHeartFill style={{marginTop:'5px',paddingLeft:'5px',width:'24px'}}/></div>
+                        </ul>
                     </div>
-                    <div style={{flex:1}}></div>
-            </main>
+                </div>
+                <div className='zone-fic'>
+                    {SelectRead()}
+                </div>
+                
+            </div>
+            <div style={{flex:1}}></div>
+        </div>
     )
 }
 

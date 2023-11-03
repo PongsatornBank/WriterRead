@@ -1,28 +1,37 @@
 import React, { useState } from 'react';
 import {BsSearch} from 'react-icons/bs'
+import './css/History.css'
 
-const Search = (props) => {
+export const Search = (props) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+
+  const data_search = [{'id' : 1,
+                        'name' : "หมอ",
+                      },
+                      {'id' : 2,
+                        'name' : 'น้องหมอ'}]
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
 
-  const handleSearchSubmit = () => {
-    // Perform a search or filter operation based on searchQuery
-    // For example, you can filter an array of data or make an API call
+  const listpic =()=> {
+    const rd = Math.floor(Math.random() * 2) 
+    if( rd === 0 ){
+        return 'hand-painted-watercolor-pastel-sky-background-23-2148902771.jpg'
+    }
+    else{
+        return 'friedEgg.jpg'
+    }
+  }
 
-    // For this example, we'll just set the search results to a sample array
-    setSearchResults([
-      'Result 1',
-      'Result 2',
-      'Result 3',
-    ]);
+  const handleSearchSubmit = () => {
+    setSearchResults(data_search);
   };
 
   return (
-    <main>
+    <div className='reading'>
         <div style={{flex:1}}> </div>
         <div style={{display:'flex',flexDirection:'column'}}>
             <div style={{display:'flex',marginTop:'20px'}}>
@@ -37,14 +46,19 @@ const Search = (props) => {
             </div>
     
             <ul>
-                {searchResults.map((result, index) => (
-                <li key={index}>{result}</li>
+              <div style={{marginTop:'20px'}}>
+                {searchResults.map((result, id) => (
+                <li key={id} style={{marginBottom:'10px',marginTop:'10px'}}>
+                  <a href="./Readfic"><img src={listpic()} className="fic-pic" alt="ficpic" /></a>
+                  <div className='details'>{result.name}</div>
+                  <div className='details'>{searchQuery}</div></li>
                 ))}
+              </div>
             </ul>
             </div>
             
             <div style={{flex:1}}></div>
-    </main>
+    </div>
   )
 }
 

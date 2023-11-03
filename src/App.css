@@ -13,11 +13,6 @@
   color: white;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
 
 
 main {
