@@ -86,32 +86,32 @@ const History = () => {
     }
     
     return(
-        <div className='body'>
-            <main style={{flexDirection:'row'}}>
-                    <div style={{flex:1}}> </div>
-                    <div className='container'>
-                        <div className='topic'>
-                            <div style={{backgroundColor: 'white',borderColor:'white' }}
-                                ><text style={{fontSize:'45px',fontFamily:'The nautigal',fontWeight:'bold',cursor: 'pointer'}}>Reading</text>
-                            </div>
-                            <div className='navbar' >
-                                <ul className='nav-list'>
-                                    <div style={{cursor: 'pointer',display:'flex'}} onClick={()=>{setRead('latest')}}>Latest read <SiDarkreader  style={{marginTop:'5px',paddingLeft:'5px',width:'24px'}}/></div>
-                                    <div style={{cursor: 'pointer',display:'flex'}} onClick={()=>{setRead('bookmark')}}>Bookmark<BsFillBookmarkHeartFill style={{marginTop:'5px',paddingLeft:'5px',width:'24px'}}/></div>
-                                </ul>
-                            </div>
-                           
+        
+        <main style={{flexDirection:'row'}}>
+                <div style={{flex:1}}> </div>
+                <div className='content'>
+                    <div className='topic'>
+                        <div style={{backgroundColor: 'white',borderColor:'white' }}
+                            ><text style={{fontSize:'45px',fontFamily:'The nautigal',fontWeight:'bold',cursor: 'pointer'}}>Reading</text>
                         </div>
-                        <div className='zone-fic' style={{flexDirection:{flexRead}}}>
-                           {SelectRead()}
+                        <div className='navbar' >
+                            <ul className='nav-list'>
+                                <div style={{cursor: 'pointer',display:'flex'}} onClick={()=>{setRead('latest')}}>Latest read <SiDarkreader  style={{marginTop:'5px',paddingLeft:'5px',width:'24px'}}/></div>
+                                <div style={{cursor: 'pointer',display:'flex'}} onClick={()=>{setRead('bookmark')}}>Bookmark<BsFillBookmarkHeartFill style={{marginTop:'5px',paddingLeft:'5px',width:'24px'}}/></div>
+                            </ul>
                         </div>
                         
                     </div>
+                    <div className='zone-fic' style={{flexDirection:{flexRead}}}>
+                        {SelectRead()}
+                    </div>
                     
-                    <div style={{flex:1}}></div>
+                </div>
                 
-            </main>
-        </div>
+                <div style={{flex:1}}></div>
+            
+        </main>
+        
     )
 }
 

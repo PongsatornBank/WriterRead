@@ -1,5 +1,5 @@
 import './App.css';
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import Navbar from "./Navbar"
@@ -11,31 +11,34 @@ import Search from './pages/Search';
 import Fiction from './pages/Fiction'
 import Notificate from './pages/Notificate';
 import { MainScreen } from './pages/Main';
+import Empty from './pages/Empty';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false)
   return (
-    <div className='body'>
+    <div className={`body ${darkMode && 'darkMode'}`}>
       <Helmet>
         <title> WriterRead </title>
       </Helmet>
 
       <header>
-          <Navbar/>
-          <div className="container">
+          <div>
+            <Navbar/>
+            <button onClick={() => setDarkMode(!darkMode)}>Hello</button>
             <Routes >
-              <Route path="/" element={<MainScreen/>} />
-              <Route path="/profile" element={<Profile />}  />
-              <Route path="/Read" element={<History />} />
-              <Route path="/Write" element={<Write />} />
-              <Route path="/Notification" element={<Notificate />} />
-              <Route path="/Search" element={<Search />} />
-              <Route path="/Fiction" element={<Fiction/>}/>
+              <Route path="/" element={<MainScreen darkMode={darkMode} setDarkMode={setDarkMode} />}/>
+              <Route path="/profile" element={<Profile darkMode={darkMode} setDarkMode={setDarkMode} />}/>
+              <Route path="/Read" element={<History darkMode={darkMode} setDarkMode={setDarkMode} />}/>
+              <Route path="/Write" element={<Write darkMode={darkMode} setDarkMode={setDarkMode} />}/>
+              <Route path="/Notification" element={<Notificate darkMode={darkMode} setDarkMode={setDarkMode} />}/>
+              <Route path="/Search" element={<Search darkMode={darkMode} setDarkMode={setDarkMode} />}/>
+              <Route path="/Fiction" element={<Fiction darkMode={darkMode} setDarkMode={setDarkMode} />}/>
+              <Route path="/Empty" element={<Empty darkMode={darkMode} setDarkMode={setDarkMode} />}/>
             </Routes>
           </div>
       </header>
 
       <main>
-
       </main> 
 
       <footer>

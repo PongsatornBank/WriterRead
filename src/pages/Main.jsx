@@ -5,14 +5,14 @@ import { BsEyeFill , BsHeartFill } from 'react-icons/bs';
 
 import './Main.css';
 
-const novel = (name="to be continue", page="/",img="https://i.ibb.co/L1Fzz4W/logo.jpg",writer="unknow",view=0,fav=0) => {
+const novel = (props, name="coming soon", page="/",img="https://i.ibb.co/L1Fzz4W/logo.jpg",writer="unknow",view=0,fav=0) => {
     return(
         <figure>
-            <a href={page}>
-                <img className="img_category" src={img} alt={name}></img>
+            <a href='/Empty'>
+              <img className="img_category" src={img} alt={name}></img>
             </a>
             <figcaption>
-                <div className="nevel_name"> {name} </div>
+                <div className={`nevel_name ${props.darkMode && 'text-white'}`}> {name} </div>
                 <div className="novel_details">
                     <p> {writer} </p>
                     <p className="novel_details_icon"> <BsEyeFill className='view'/> {view} </p>
@@ -23,7 +23,7 @@ const novel = (name="to be continue", page="/",img="https://i.ibb.co/L1Fzz4W/log
     )
 }
 
-export const MainScreen = () => {
+export const MainScreen = (props) => {
   const slides = [
     {
       url: 'https://i.ibb.co/8j7Z2jc/img1.jpg',
@@ -88,33 +88,33 @@ export const MainScreen = () => {
             <div className="category">
                 <h1 className="topic_original"> Original </h1>
                 <div className="product">
-                    {novel()}
-                    {novel()}
-                    {novel()}
-                    {novel()}
-                    {novel()}
+                    {novel(props)}
+                    {novel(props)}
+                    {novel(props)}
+                    {novel(props)}
+                    {novel(props)}
                 </div>
             </div>
 
             <div className="category">
                 <h1 className="topic_original"> Action </h1>
                 <div className="product">
-                    {novel("omniscient reader's viewpoint","OmniscientReader'sViewpoint.jsx","https://i.ibb.co/ftbsdS0/img2.jpg","Sing Shong",300,240)}
-                    {novel("solo leveling","SoloLeveling.jsx","https://i.ibb.co/8j7Z2jc/img1.jpg","Chugong",200,150)}
-                    {novel()}
-                    {novel()}
-                    {novel()}
+                    {novel(props,"omniscient reader's viewpoint","OmniscientReader'sViewpoint.jsx","https://i.ibb.co/ftbsdS0/img2.jpg","Sing Shong",300,240)}
+                    {novel(props,"solo leveling","SoloLeveling.jsx","https://i.ibb.co/8j7Z2jc/img1.jpg","Chugong",200,150)}
+                    {novel(props)}
+                    {novel(props)}
+                    {novel(props)}
                 </div>
             </div>
 
             <div className="category">
                 <h1 className="topic_original"> Japanese </h1>
                 <div className="product">
-                    {novel("classroom of the elite","ClassroomOfTheElite.jsx","https://i.ibb.co/3T7nNkK/img3.png","Syougo Kinugasa",100,80)}
-                    {novel()}
-                    {novel()}
-                    {novel()}
-                    {novel()}
+                    {novel(props,"classroom of the elite","ClassroomOfTheElite.jsx","https://i.ibb.co/3T7nNkK/img3.png","Syougo Kinugasa",100,80)}
+                    {novel(props)}
+                    {novel(props)}
+                    {novel(props)}
+                    {novel(props)}
                 </div>
             </div>
         </div>
