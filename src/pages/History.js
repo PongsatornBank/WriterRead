@@ -56,7 +56,7 @@ const History = () => {
             while(i<=count){
                 boxs.push(
                 <div className='fiction'>
-                    <a href="./Readfic"><img src={listpic()} className="fic-pic" alt="ficpic" /></a>
+                    <a href="./Fiction"><img src={listpic()} className="fic-pic" alt="ficpic" /></a>
                     <div className='details'>
                         <text className='fic-name'>หมอ</text>
                         <div className='fic-boxes'>
