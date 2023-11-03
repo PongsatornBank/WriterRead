@@ -1,9 +1,8 @@
 import React,{useState}from 'react';
-import './css/History.css';
 import {BsFillPersonFill,BsFillTrashFill,BsFillBookmarkHeartFill} from 'react-icons/bs';
 import {SiDarkreader} from 'react-icons/si';
-import {FaSadCry} from 'react-icons/fa'
-
+import {FaSadCry} from 'react-icons/fa';
+import '../css/History.css'
 
 const History = () => {
     const [read,setRead] = useState('latest')

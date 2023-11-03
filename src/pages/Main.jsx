@@ -5,10 +5,10 @@ import { BsEyeFill , BsHeartFill } from 'react-icons/bs';
 
 import './Main.css';
 
-const novel = (props, name="coming soon", page="/",img="https://i.ibb.co/L1Fzz4W/logo.jpg",writer="unknow",view=0,fav=0) => {
+const novel = (props, name="coming soon", page="/Empty",img="https://i.ibb.co/L1Fzz4W/logo.jpg",writer="unknow",view=0,fav=0) => {
     return(
         <figure>
-            <a href='/Empty'>
+            <a href={page}>
               <img className="img_category" src={img} alt={name}></img>
             </a>
             <figcaption>
@@ -99,8 +99,8 @@ export const MainScreen = (props) => {
             <div className="category">
                 <h1 className="topic_original"> Action </h1>
                 <div className="product">
-                    {novel(props,"omniscient reader's viewpoint","OmniscientReader'sViewpoint.jsx","https://i.ibb.co/ftbsdS0/img2.jpg","Sing Shong",300,240)}
-                    {novel(props,"solo leveling","SoloLeveling.jsx","https://i.ibb.co/8j7Z2jc/img1.jpg","Chugong",200,150)}
+                    {novel(props,"omniscient reader's viewpoint","Fiction","https://i.ibb.co/ftbsdS0/img2.jpg","Sing Shong",300,240)}
+                    {novel(props,"solo leveling","/Empty","https://i.ibb.co/8j7Z2jc/img1.jpg","Chugong",200,150)}
                     {novel(props)}
                     {novel(props)}
                     {novel(props)}
@@ -110,7 +110,7 @@ export const MainScreen = (props) => {
             <div className="category">
                 <h1 className="topic_original"> Japanese </h1>
                 <div className="product">
-                    {novel(props,"classroom of the elite","ClassroomOfTheElite.jsx","https://i.ibb.co/3T7nNkK/img3.png","Syougo Kinugasa",100,80)}
+                    {novel(props,"classroom of the elite","/Empty","https://i.ibb.co/3T7nNkK/img3.png","Syougo Kinugasa",100,80)}
                     {novel(props)}
                     {novel(props)}
                     {novel(props)}
